@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodoApp from './components/todo/TodoApp';
-
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 class App extends Component {
   render() {
@@ -12,14 +13,4 @@ class App extends Component {
   }
 }
 
-class LoginComponent extends Component{
-  render(){
-    return(
-      <div>
-        User Name : <input type="text" name="userName"/>
-        Password : <input type="password" name="password"/>
-      </div>
-    );
-  }
-}
 export default App;
