@@ -10,14 +10,12 @@ public class TestController {
 	
 	@GetMapping("/hello-world")
 	public String test() {
-		System.out.println("First PAge");
-		return "Hello World";
+		return "Hello World, You are going good!";
     }
     
     @GetMapping("/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		System.out.println("First PAge");
-		return new HelloWorldBean("Hello World 2");
+		return new HelloWorldBean("Hello World Bean");
 	}
 
 }
